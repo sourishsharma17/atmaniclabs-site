@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmanic Labs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">Atmanic Labs</span>
+            <span class="logo-dot"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#solution">Product</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="animated-title">
+                <div class="welcome-line">
+                    <span class="typing-text">
+                        <span class="welcome-text">Welcome to</span>
+                        <span class="company-name">Atmanic Labs</span>
+                    </span>
+                    <span class="cursor"></span>
+                </div>
+            </div>
+            <p class="tagline">Pioneering the Future of Brain-Computer Interfaces</p>
+            <div class="hero-text">
+                <p class="vision-text">What Apple did with smartphones, and Meta is doing with VR - we'll do for BCI.</p>
+            </div>
+        </div>
+        <div class="neural-network">
+            <canvas id="neuralCanvas"></canvas>
+        </div>
+        <div class="floating-elements">
+            <div class="tech-particle" data-speed="2"></div>
+            <div class="tech-particle" data-speed="1"></div>
+            <div class="tech-particle" data-speed="3"></div>
+            <div class="brain-wave"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Neuro Tech</h3>
+                    <p>Pushing the boundaries of brain-computer interfaces</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI</h3>
+                    <p>Advanced machine learning for real-time brain analysis</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Hardware Engineering</h3>
+                    <p>Building cutting-edge wearable technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="./images/team/siddarth.jpg" alt="Siddarth Kambli">
+                </div>
+                <h3>Siddarth Kambli</h3>
+                <p class="role">CEO & Co-Founder</p>
+                <p class="bio">Visionary leader with a passion for democratizing neurotechnology. Dropping out of Imperial to build the future of BCI.</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="./images/team/sourish.jpg" alt="Sourish Sharma">
+                </div>
+                <h3>Sourish Sharma</h3>
+                <p class="role">COO & Co-Founder</p>
+                <p class="bio">Strategic operator with a drive to revolutionize how we interact with technology. Committed to making BCI accessible to all.</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="./images/team/sumukh.jpg" alt="Sumukh Adiraju">
+                </div>
+                <h3>Sumukh Adiraju</h3>
+                <p class="role">CTO & Co-Founder</p>
+                <p class="bio">Technical innovator building the bridge between neuroscience and consumer technology. Dedicated to solving consciousness.</p>
+            </div>
+        </div>
+        <div class="team-mission">
+            <h3 class="glow-text">Our Mission</h3>
+            <p class="fade-in-text">We're on a mission to help people reclaim their focus in a world full of distractions. By combining cutting-edge brainwave sensing with real-time AI feedback, we're building a wearable that empowers users to understand their mental state, boost productivity, and form deeper, distraction-free work habits. Whether you're studying for exams, driving long hours, or deep in creative flow — we're here to keep your mind on track.</p>
+        </div>
+        <div class="team-vision">
+            <h3 class="glow-text">Our Vision</h3>
+            <p class="fade-in-text">We envision a world where mental focus is understood, measured, and enhanced — just like physical health. Our goal is to make neurotechnology accessible and practical, helping individuals and industries stay alert, engaged, and in control of their cognitive wellbeing. From students to truck drivers, we want to redefine how the world thinks about attention and productivity.</p>
+        </div>
+        <div class="team-values">
+            <h3>Our Values</h3>
+            <div class="value-item">
+                <h4>Human-Centered Design</h4>
+                <p>We build technology that works with people, not against them. Comfort, usability, and real-world impact are at the core of everything we create.</p>
+            </div>
+            <div class="value-item">
+                <h4>Privacy First</h4>
+                <p>Brain data is deeply personal. We're committed to ensuring all user data is secure, anonymized, and never sold or misused.</p>
+            </div>
+            <div class="value-item">
+                <h4>Science-Driven Innovation</h4>
+                <p>Our products are backed by neuroscience, and built with the latest advancements in AI and hardware—grounded in research, not hype.</p>
+            </div>
+            <div class="value-item">
+                <h4>Impact Over Hype</h4>
+                <p>We're not here to chase trends. We're here to solve real problems that affect real people, from distracted students to overworked drivers.</p>
+            </div>
+            <div class="value-item">
+                <h4>Continuous Improvement</h4>
+                <p>Whether it's product updates or team growth, we believe in learning fast, listening deeply, and iterating with purpose.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem" class="problem-section">
+        <h2 class="section-title">The Problem We're Solving</h2>
+        <div class="problem-grid">
+            <div class="problem-card">
+                <h3>Work & Focus (B2C)</h3>
+                <div class="problem-content">
+                    <p>In an age of constant digital distraction, attention spans are shrinking. Social media, notifications, and overstimulation have made it difficult for people to stay focused on deep work. This leads to lost productivity, poor study outcomes, and burnout — with no clear way to measure or improve mental focus in real time.</p>
+                </div>
+            </div>
+            <div class="problem-card">
+                <h3>Trucking & Safety (B2B)</h3>
+                <div class="problem-content">
+                    <p>Long-haul driving is a high-risk job where fatigue and loss of attention are leading causes of accidents. Drivers often push through exhaustion without realizing their cognitive state is deteriorating. There's a lack of real-time, non-intrusive tools to detect when a driver is losing focus — putting lives and cargo at risk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solution" class="solution-section">
+        <h2 class="section-title">The 8-Electrode Headband</h2>
+        <div class="solution-content">
+            <div class="solution-text">
+                <h3>Introducing Manic 1</h3>
+                <p>Our flagship product, the Manic 1, is a revolutionary 8-electrode headband that brings professional-grade brain-computer interface technology to everyone.</p>
+                <div class="solution-features">
+                    <div class="feature">
+                        <h4>Advanced Technology</h4>
+                        <ul>
+                            <li>8 high-precision electrodes</li>
+                            <li>Real-time brain activity monitoring</li>
+                            <li>AI-powered analysis</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h4>User-Friendly Design</h4>
+                        <ul>
+                            <li>Comfortable, adjustable fit</li>
+                            <li>Wireless connectivity</li>
+                            <li>Long battery life</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="solution-image">
+                <img src="images/product/manic1.png" alt="Manic 1 Headband" class="headband-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline-section">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">Now</div>
+                <div class="timeline-content">
+                    <h3>Fundraising</h3>
+                    <p>Seeking strategic investors to accelerate our vision</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Jul 2025</div>
+                <div class="timeline-content">
+                    <h3>MVP Completion</h3>
+                    <p>Finalizing our 8-channel prototype in China</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Aug 2025</div>
+                <div class="timeline-content">
+                    <h3>Mass Marketing</h3>
+                    <p>Launching pre-orders and scaling up production</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Oct 2025</div>
+                <div class="timeline-content">
+                    <h3>Enterprise Launch</h3>
+                    <p>Shipping to enterprise partners</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Dec 2025</div>
+                <div class="timeline-content">
+                    <h3>Consumer Launch</h3>
+                    <p>Mass-market consumer release</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2026</div>
+                <div class="timeline-content">
+                    <h3>Developer Platform</h3>
+                    <p>Launching open platform for developers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="market" class="market-section">
+        <h2>Market Opportunity</h2>
+        <div class="market-content">
+            <div class="market-card">
+                <h3>Enterprise Market</h3>
+                <div class="market-stats">
+                    <div class="stat">
+                        <span class="number">$100M+</span>
+                        <span class="label">Annual Savings Potential</span>
+                    </div>
+                </div>
+                <p>Targeting large logistics companies with significant ROI potential through accident prevention.</p>
+            </div>
+            <div class="market-card">
+                <h3>Consumer Market</h3>
+                <div class="market-stats">
+                    <div class="stat">
+                        <span class="number">2.5B</span>
+                        <span class="label">Initial Target Users</span>
+                    </div>
+                </div>
+                <p>Expanding from productivity to a full range of applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="product">
+        <h2>Our Product</h2>
+        <div class="product-content">
+            <div class="product-showcase">
+                <div class="product-image">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <div class="product-details">
+                    <h3>Innovative Solutions</h3>
+                    <p>Cutting-edge technology for tomorrow's challenges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Atmanic Labs</span>
+                <span class="logo-dot"></span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2024 Atmanic Labs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
